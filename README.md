@@ -21,4 +21,5 @@ Android面试题
 - [请描诉Activity的启动流程，从点击图标开始](document/android/请描诉Activity的启动流程，从点击图标开始.md)
 - [Android中startService和bindService的区别](document/android/Android中startService和bindService的区别.md)
 - [Activity启动模式](document/android/Activity启动模式.md)
+- [IPC 进程通讯方式](document/android/IPC 进程通讯方式.md)
 
