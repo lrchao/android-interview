@@ -10,6 +10,7 @@ Android面试题
 - [序列化原理](document/java/序列化原理.md)
 - [Java中的几种引用类型](document/java/Java中的几种引用类型.md)
 - [MD5和Base64](document/java/MD5和Base64.md)
+- [HashCode作用原理](document/java/HashCode作用原理.md)
 
 ## Android
 - [为什么不能在BroadcastReceiver中开启子线程](document/android/为什么不能在BroadcastReceiver中开启子线程.md)
