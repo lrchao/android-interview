@@ -8,4 +8,5 @@ Android面试题
 ## Android
 - [为什么不能在BroadcastReceiver中开启子线程](document/android/为什么不能在BroadcastReceiver中开启子线程.md)
 - [为什么service里面startActivity抛异常？activity不会](document/android/为什么service里面startActivity抛异常？activity不会.md)
-- 内存泄漏的场景
+- [请描诉Activity的启动流程，从点击图标开始](document/android/请描诉Activity的启动流程，从点击图标开始.md)
+
