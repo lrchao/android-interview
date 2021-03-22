@@ -4,6 +4,7 @@ Android面试题
 
 ## Java
 - [Java GC 的几种算法](document/java/JavaGC.md)
+- [volatile的使用及其原理](document/java/volatile的使用及其原理.md)
 
 ## Android
 - [为什么不能在BroadcastReceiver中开启子线程](document/android/为什么不能在BroadcastReceiver中开启子线程.md)
