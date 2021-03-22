@@ -8,6 +8,7 @@ Android面试题
 - [Synchronized原理](document/java/Synchronized原理.md)
 - [ArrayList、LinkedList、HashMap底层实现](document/java/ArrayList、LinkedList、HashMap底层实现.md)
 - [序列化原理](document/java/序列化原理.md)
+- [Java 中的几种引用类型](document/java/Java中的几种引用类型.md)
 
 ## Android
 - [为什么不能在BroadcastReceiver中开启子线程](document/android/为什么不能在BroadcastReceiver中开启子线程.md)
