@@ -33,4 +33,5 @@ Android面试题
 - [LeakCanary原理](document/thirdparty/LeakCanary原理.md)
 - [OkHttp原理](document/thirdparty/OkHttp原理.md)
 - [OkHttp对于网络请求都有哪些优化](document/thirdparty/OkHttp对于网络请求都有哪些优化.md)
+- [OkHttp框架中都用到了哪些设计模式](document/thirdparty/OkHttp框架中都用到了哪些设计模式.md)
 
