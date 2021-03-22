@@ -47,7 +47,7 @@ synchronized可以修饰静态方法、成员函数，同时还可以直接定�
 
 在理解锁实现原理之前先了解一下Java的对象头和Monitor，在JVM中，对象是分成三部分存在的：对象头、实例数据、对其填充。
 
-![](../../1_yuqVQpDYDmZ5pMdUfB678A.jpeg)
+![](../../picture/1_yuqVQpDYDmZ5pMdUfB678A.jpeg)
 
 对象头是我们需要关注的重点，它是synchronized实现锁的基础，因为synchronized申请锁、上锁、释放锁都与对象头有关。
 对象头主要结构是由Mark Word 和 Class Metadata Address组成，其中Mark Word存储对象的hashCode、锁信息或分代年龄或GC标志等信息，
