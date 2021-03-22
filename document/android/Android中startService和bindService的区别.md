@@ -1,0 +1,12 @@
+### Android中startService和bindService的区别
+
+1. startService开启服务以后，与activity就没有关联，不受影响，独立运行。
+2. bindService开启服务以后，与activity存在关联，退出activity时必须调用unbindService方法，否则会报ServiceConnection泄漏的错误
+3. 生命周期的区别。
+
+执行startService时，Service会经历onCreate->onStartCommand。当执行stopService时，直接调用onDestroy方法。
+调用者如果没有stopService，Service会一直在后台运行，下次调用者再起来仍然可以stopService
+
+执行bindService时，Service会经历onCreate->onBind。
+这个时候调用者和Service绑定在一起。调用者调用unbindService方法或者调用者Context不存在了（如Activity被finish了），Service就会调用onUnbind->onDestroy。
+这里所谓的绑定在一起就是说两者共存亡了。
