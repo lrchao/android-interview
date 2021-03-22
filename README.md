@@ -6,7 +6,7 @@ Android面试题
 - [Java GC 的几种算法](document/java/JavaGC.md)
 - [volatile的使用及其原理](document/java/volatile的使用及其原理.md)
 - [Synchronized原理](document/java/Synchronized原理.md)
-- [ArrayList、LinkedList、HashMap底层实现](document/java/ArrayList、LinkedList、HashMap底层实现.md)
+- [ArrayList、LinkedList、HashMap底层实现](document/datastructure/ArrayList、LinkedList、HashMap底层实现.md)
 - [序列化原理](document/java/序列化原理.md)
 - [Java中的几种引用类型](document/java/Java中的几种引用类型.md)
 - [MD5和Base64](document/java/MD5和Base64.md)
