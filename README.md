@@ -35,6 +35,7 @@ Android面试题
 - 说说View/ViewGroup的绘制流程
 - 说说你理解的MeasureSpec
 - [在onResume中handler.postRunnable可以测量宽高么](document/android/在onResume中handler.postRunnable可以测量宽高么.md)
+- [View.post(Runnable) 为什么可以获取到 View 的宽高？](document/android/View.post(Runnable)为什么可以获取到View的宽高.md)
 
 ## Network
 
