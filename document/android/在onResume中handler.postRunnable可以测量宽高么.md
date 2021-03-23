@@ -1,5 +1,13 @@
 不能
 
+不能，MessageQueue同步障碍机制： 可以发现就是把一条Message，注意这个Message是没有设置target的，整个消息循环唯一一处不设置回调的target(hander)，
+因为这个即使标志了同步障碍消息，也是不需要handler来pushMessage到队列中，直接手动循环移动链表插入到合适time的Message之后的即可。  
+
+scheduleTraversals中设置了同步障碍消息，就是相当于在MessageQueue中插入了一个Message，并且是在onResume之后插入的，
+所以在onResume中handler.post（Runnable）之后，这个消息会在同步障碍Message之前，会先被执行，这个时候依然没有刷新绘制界面，待查询到同步障碍Message时候，会等待下个异步Message（刷新Message）出现。   
+
+所以在onResume中handler.post（Runnable）是Ui操作失效的。
+
 #### 1. Activity生命周期启动流程
 
 在Activity可见之后，紧接着就是要触发绘制界面了，会走到handleResumeActivity方法，会performResumeActivity调用activity的onResume方法     
