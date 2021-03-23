@@ -34,7 +34,7 @@ Android面试题
 - [为什么系统不允许在子线程中访问UI？](document/android/为什么系统不允许在子线程中访问UI.md)
 - 说说View/ViewGroup的绘制流程
 - 说说你理解的MeasureSpec
-- [在onResume中可以测量宽高么](document/android/在onResume中可以测量宽高么.md)
+- [在onResume中handler.postRunnable可以测量宽高么](document/android/在onResume中handler.postRunnable可以测量宽高么.md)
 
 ## Network
 
