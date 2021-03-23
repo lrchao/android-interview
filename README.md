@@ -31,7 +31,9 @@ Android面试题
 ## Android UI
 - [子 View 在消费掉 Down 事件后，后续的事件都会传递给它，你知道是怎么实现的吗?](document/android/子View在消费掉Down事件后后续的事件都会传递给它你知道是怎么实现的吗.md)
 - [横向 ScrollView、纵向 ListView 怎么处理滑动手势冲突](document/android/横向ScrollView纵向ListView怎么处理滑动手势冲突.md)
+- [为什么系统不允许在子线程中访问UI？](document/android/为什么系统不允许在子线程中访问UI.md)
 - 说说View/ViewGroup的绘制流程
+- 说说你理解的MeasureSpec
 
 ## Network
 
