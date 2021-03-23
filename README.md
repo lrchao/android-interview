@@ -58,4 +58,5 @@ Android面试题
 
 ## Experience
 - [实际工作中用到哪些设计模式](document/experience/实际工作中用到哪些设计模式.md)
+- 依赖注入是什么？用过哪些库？是否使用过
 
