@@ -12,6 +12,11 @@
 如果 ViewRootImpl 未创建，即 View 尚未开始绘制，会将任务保存为 HandlerAction，暂存在队列 HandlerActionQueue 中，
 等到 View 开始绘制，执行 performTraversal() 方法时，在 dispatchAttachedToWindow() 方法中通过 Handler 分发 HandlerActionQueue 中暂存的任务。
 
+> 首先，你要知道 performTraversals() 是在主线程消息队列的一次消息处理过程中执行的，
+而 dispatchAttachedToWindow() 间接调用的 mRunQueue.executeActions() 发送的任务也是通过 Handler 发送到主线程消息队列的，
+那么它的执行就一定在这次的 performTraversals() 方法执行完之后。所以，在这里获取 View 的宽高是完全没有问题的。
+
+
 #### 还可以怎么获取视图宽高？
 
 除了通过 View.post() 获取视图宽高之外，还有两种比较推荐的方式。
@@ -40,5 +45,6 @@ binding.dialog.viewTreeObserver.addOnGlobalLayoutListener(object : ViewTreeObser
 
 
 - https://juejin.cn/post/6895735092438630407
+
 
 
