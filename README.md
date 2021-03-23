@@ -4,6 +4,7 @@ Android面试题
 ## Data Structure
 - [ArrayList、LinkedList、HashMap底层实现](document/datastructure/ArrayList、LinkedList、HashMap底层实现.md)
 - [Java中中文字符和英文字符的大小分别多少](document/datastructure/Java中中文字符和英文字符的大小分别多少.md)
+- [int float double多少位](document/datastructure/int_float_double多少位.md)
 
 ## Java
 - [Java GC 的几种算法](document/java/JavaGC.md)
