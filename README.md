@@ -14,6 +14,7 @@ Android面试题
 - [MD5和Base64](document/java/MD5和Base64.md)
 - [HashCode作用原理](document/java/HashCode作用原理.md)
 - [Java类的加载过程是什么](document/java/Java类的加载过程是什么.md)
+- [锁的四种状态](document/java/锁的四种状态.md)
 
 ## Android
 - [为什么不能在BroadcastReceiver中开启子线程](document/android/为什么不能在BroadcastReceiver中开启子线程.md)
