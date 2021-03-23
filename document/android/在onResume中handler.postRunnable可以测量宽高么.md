@@ -1,12 +1,23 @@
 不能
 
-不能，MessageQueue同步障碍机制： 可以发现就是把一条Message，注意这个Message是没有设置target的，整个消息循环唯一一处不设置回调的target(hander)，
-因为这个即使标志了同步障碍消息，也是不需要handler来pushMessage到队列中，直接手动循环移动链表插入到合适time的Message之后的即可。  
+#### View的绘制过程大概如下（包含部分Activity启动过程）
+- 在IApplicationThread收到启动Activity的消息时，在performLaunchActivity中通过Instrumentation#newActivity创建Activity，在newActivity中PhoneWindow以及对应的DecorView
+- 接着执行handleResumeActivity->performResumeActivity，在handleResumeActivity处理Activity生命周期，在handleResumeActivity中通过WM添加Activity的window，同时创建一个ViewRootImpl与DecordView绑定。在ViewRootImpl与DecordView绑定后，ViewRootImpl发送同步障碍消息，然后通过Choreographer发送异步消息，等待下一个VSYNC到来时执行performTraversals开始绘制
 
-scheduleTraversals中设置了同步障碍消息，就是相当于在MessageQueue中插入了一个Message，并且是在onResume之后插入的，
-所以在onResume中handler.post（Runnable）之后，这个消息会在同步障碍Message之前，会先被执行，这个时候依然没有刷新绘制界面，待查询到同步障碍Message时候，会等待下个异步Message（刷新Message）出现。   
+#### onResume与ViewRootImpl与DecordView绑定两者顺序问题
+- performResumeActivity是在handleResumeActivity中被调用
+- 生命周期方法onResume是在performResumeActivity中触发
+- ViewRootImpl与DecordView绑定是在handleResumeActivity中，在performResumeActivity之后
 
-所以在onResume中handler.post（Runnable）是Ui操作失效的。
+#### 因此可以知道onResume在ViewRootImpl与DecordView绑定之前执行
+
+#### onResume中调用handler.postRunnable的消息是否在异步消息之前执行
+- Handler收到同步障碍消息后（target = null的消息）会优先执行异步消息
+- **handler.postRunnable的消息何时会执行？当前面的同步消息都执行完了，轮到它的时候，它就会被执行**
+- 因此handler.postRunnable可能在异步消息前执行完毕，也可能由于阻塞导致handler.postRunnable的消息在异步消息来之前都还没执行，就会在异步消息后执行
+- 
+#### 总结
+通过在Activity 的 onResume 方法中 handler.postRunnable 能获取到 View 宽高是不可靠的
 
 #### 1. Activity生命周期启动流程
 
