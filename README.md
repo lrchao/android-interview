@@ -27,6 +27,9 @@ Android面试题
 - [IPC 进程通讯方式](document/android/IPC进程通讯方式.md)
 - [Looper.loop 为什么不会卡死](document/android/Looper.loop为什么不会卡死.md)
 
+## Android UI
+- [子 View 在消费掉 Down 事件后，后续的事件都会传递给它，你知道是怎么实现的吗?](document/android/子View在消费掉Down事件后，后续的事件都会传递给它，你知道是怎么实现的吗?.md)
+
 ## Network
 
 - [HTTP 与 HTTPS 区别](document/network/HTTP与HTTPS区别.md)
