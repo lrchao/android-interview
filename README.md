@@ -30,6 +30,7 @@ Android面试题
 - [APK组成](document/android/APK组成.md)
 - [打包流程](document/android/打包流程.md)
 - [Bitmap压缩，质量100%与90%的区别？](document/android/Bitmap压缩质量100%与90%的区别.md)
+- [Activity中为什么要用bundle来传递数据，而不用HashMap来代替？](document/android/Activity中为什么要用bundle来传递数据，而不用HashMap来代替.md)
 
 ## Android UI
 - [子 View 在消费掉 Down 事件后，后续的事件都会传递给它，你知道是怎么实现的吗?](document/android/子View在消费掉Down事件后后续的事件都会传递给它你知道是怎么实现的吗.md)
