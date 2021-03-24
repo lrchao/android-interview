@@ -49,6 +49,7 @@ Android面试题
 - 如何通过WindowManager添加Window(代码实现)？
 - [WindowMangerService中token到底是什么？有什么区别](document/android/WindowMangerService中token到底是什么.md)
 - [Window,Activity,DecorView,ViewRootImpl之间的关系](document/android/WindowActivityDecorViewViewRootImpl之间的关系.md)
+- [RecyclerView的回收复用机制](document/android/RecyclerView的回收复用机制.md)
 
 ## Network
 
