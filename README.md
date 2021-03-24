@@ -42,6 +42,14 @@ Android面试题
 - [View.post(Runnable) 为什么可以获取到 View 的宽高？](document/android/View.post(Runnable)为什么可以获取到View的宽高.md)
 - [事件冲突怎么解决？](document/android/事件冲突怎么解决.md)
 - [为什么Dialog不能用Application的Context？](document/android/为什么Dialog不能用Application的Context.md)
+- WebView如何做资源缓存？
+- invalidate() 和 postInvalicate() 区别
+- 如何实现Activity窗口快速变暗
+- 自定义View执行invalidate()方法,为什么有时候不会回调onDraw()
+- DecorView, ViewRootImpl,View之间的关系，ViewGroup.add()会多添加一个ViewrootImpl吗
+- 如何通过WindowManager添加Window(代码实现)？
+- WindowMangerService中token到底是什么？有什么区别
+- 
 
 ## Network
 
