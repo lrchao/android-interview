@@ -29,7 +29,7 @@ Android面试题
 - [android系统中哪些设计模式？](document/android/android系统中哪些设计模式.md)
 - [APK组成](document/android/APK组成.md)
 - [打包流程](document/android/打包流程.md)
-- [Bitmap压缩，质量100%与90%的区别？](document/android/Bitmap压缩质量100%与90%的区别.md)
+- [Bitmap压缩，质量100%与90%的区别？](document/android/Bitmap压缩质量100与90的区别.md)
 - [Activity中为什么要用bundle来传递数据，而不用HashMap来代替？](document/android/Activity中为什么要用bundle来传递数据，而不用HashMap来代替.md)
 
 ## Android UI
