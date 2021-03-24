@@ -37,7 +37,7 @@ Android面试题
 - [横向 ScrollView、纵向 ListView 怎么处理滑动手势冲突](document/android/横向ScrollView纵向ListView怎么处理滑动手势冲突.md)
 - [为什么系统不允许在子线程中访问UI？](document/android/为什么系统不允许在子线程中访问UI.md)
 - [说说View/ViewGroup的绘制流程](document/android/说说View/ViewGroup的绘制流程.md)
-- 说说你理解的MeasureSpec
+- [说说你理解的MeasureSpec](document/android/说说你理解的MeasureSpec.md)
 - [在onResume中handler.postRunnable可以测量宽高么](document/android/在onResume中handler.postRunnable可以测量宽高么.md)
 - [View.post(Runnable) 为什么可以获取到 View 的宽高？](document/android/View.post(Runnable)为什么可以获取到View的宽高.md)
 - [事件冲突怎么解决？](document/android/事件冲突怎么解决.md)
