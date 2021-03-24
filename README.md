@@ -45,7 +45,7 @@ Android面试题
 - WebView如何做资源缓存？
 - [invalidate() 和 postInvalicate() 区别](document/android/invalidate和postInvalicate区别.md)
 - [如何实现Activity窗口快速变暗](document/android/如何实现Activity窗口快速变暗.md)
-- [自定义View执行invalidate()方法,为什么有时候不会回调onDraw](自定义View执行invalidate方法为什么有时候不会回调onDraw.md)
+- [自定义View执行invalidate()方法,为什么有时候不会回调onDraw](document/android/自定义View执行invalidate方法为什么有时候不会回调onDraw.md)
 - DecorView, ViewRootImpl,View之间的关系，ViewGroup.add()会多添加一个ViewrootImpl吗
 - 如何通过WindowManager添加Window(代码实现)？
 - WindowMangerService中token到底是什么？有什么区别
