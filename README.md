@@ -48,7 +48,7 @@ Android面试题
 - [自定义View执行invalidate()方法,为什么有时候不会回调onDraw](document/android/自定义View执行invalidate方法为什么有时候不会回调onDraw.md)
 - DecorView, ViewRootImpl,View之间的关系，ViewGroup.add()会多添加一个ViewrootImpl吗
 - 如何通过WindowManager添加Window(代码实现)？
-- WindowMangerService中token到底是什么？有什么区别
+- [WindowMangerService中token到底是什么？有什么区别](document/android/WindowMangerService中token到底是什么.md)
 - [Window,Activity,DecorView,ViewRootImpl之间的关系](document/android/WindowActivityDecorViewViewRootImpl之间的关系.md)
 
 ## Network
