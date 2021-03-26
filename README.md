@@ -33,6 +33,7 @@ Android面试题
 - [Activity中为什么要用bundle来传递数据，而不用HashMap来代替？](document/android/Activity中为什么要用bundle来传递数据，而不用HashMap来代替.md)
 - [描述下Binder机制原理？](document/android/描述下Binder机制原理.md)
 - [Binder线程池的工作过程是什么样？](document/android/Binder线程池的工作过程是什么样.md)
+- [Handler怎么进行线程通信，原理是什么？](document/android/Handler怎么进行线程通信，原理是什么.md)
 
 
 ## Android UI
