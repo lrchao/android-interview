@@ -23,6 +23,31 @@ virtual void onZygoteInit() {
 }
 ~~~
 
+[-> ProcessState.cpp]
+~~~java
+void ProcessState::startThreadPool()
+{
+    AutoMutex _l(mLock);    //多线程同步
+    if (!mThreadPoolStarted) {
+        mThreadPoolStarted = true;
+        spawnPooledThread(true);  【见小节2.3】
+    }
+}
+~~~
+[-> ProcessState.cpp]
+~~~java
+void ProcessState::spawnPooledThread(bool isMain)
+{
+    if (mThreadPoolStarted) {
+        //获取Binder线程名【见小节2.3.1】
+        String8 name = makeBinderThreadName();
+        //此处isMain=true【见小节2.3.2】
+        sp<Thread> t = new PoolThread(isMain);
+        t->run(name.string());
+    }
+}
+~~~
+
 ![](../../picture/binder_thread_create.jpg)
 
 Binder设计架构中，只有第一个Binder主线程(也就是Binder_1线程)是由应用程序主动创建，Binder线程池的普通线程都是由Binder驱动根据IPC通信需求创建，
@@ -34,3 +59,6 @@ Binder设计架构中，只有第一个Binder主线程(也就是Binder_1线程)�
 - Binder主线程：在进程的 main 函数中通过调用 startThreadPool() 函数创建的线程,并且主线程是不会退出的
 - Binder普通线程：是由 Binder 驱动通过发送 BR_SPAWN_LOOPER 命令，然后应用进程调用 spawnPooledThread 函数创建的线程
 - Binder其它线程：是调用 IPC.joinThreadPool()，将当前线程直接加入 Binder 线程队列的线程，例如 media 的主线程
+
+参考
+- http://gityuan.com/2016/10/29/binder-thread-pool/
