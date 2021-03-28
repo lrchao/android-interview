@@ -34,7 +34,7 @@ Android面试题
 - [描述下Binder机制原理？](document/android/描述下Binder机制原理.md)
 - [Binder线程池的工作过程是什么样？](document/android/Binder线程池的工作过程是什么样.md)
 - [Handler怎么进行线程通信，原理是什么？](document/android/Handler怎么进行线程通信，原理是什么.md)
-
+- [Handler如果没有消息处理是阻塞的还是非阻塞的？](document/android/Handler如果没有消息处理是阻塞的还是非阻塞的.md)
 
 ## Android UI
 - [子 View 在消费掉 Down 事件后，后续的事件都会传递给它，你知道是怎么实现的吗?](document/android/子View在消费掉Down事件后后续的事件都会传递给它你知道是怎么实现的吗.md)
