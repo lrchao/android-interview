@@ -58,6 +58,9 @@ Android面试题
 - [RecyclerView的回收复用机制](document/android/RecyclerView的回收复用机制.md)
 - [IdleHandler是什么？怎么使用，能解决什么问题？](document/android/IdleHandler是什么？怎么使用，能解决什么问题.md)
 
+## Android 优化
+- [如何内存优化？](document/android/optimize/如何内存优化.md)
+
 ## Network
 
 - [HTTP 与 HTTPS 区别](document/network/HTTP与HTTPS区别.md)
