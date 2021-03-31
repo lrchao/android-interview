@@ -14,6 +14,9 @@
 3. 引爆炸弹：中控系统立即封装现场，抓取快照，搜集目标执行慢的罪证(traces)，便于后续的案件侦破(调试分析)，最后是炸毁目标。
 
 ### Service超时机制
+
+![](../../picture/1_yuqVQpDYDmZ5pMdUfB678A.jpeg)
+
 ![](../../picture/ba5298b192e8c0a687e2453d9a58d07e1603447825216.png)
 
 ### BroadCast机制
