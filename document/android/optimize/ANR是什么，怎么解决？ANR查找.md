@@ -15,27 +15,25 @@
 
 ### Service超时机制
 
-![](../../picture/1_yuqVQpDYDmZ5pMdUfB678A.jpeg)
-
-![](../../picture/ba5298b192e8c0a687e2453d9a58d07e1603447825216.png)
+![](../../../picture/ba5298b192e8c0a687e2453d9a58d07e1603447825216.png)
 
 ### BroadCast机制
 静态广播
-![](../../picture/9b98d6e0735aa1e3c761032fe951f8781603447825217.png)
+![](../../../picture/9b98d6e0735aa1e3c761032fe951f8781603447825217.png)
 
 动态广播
-![](../../picture/a517d0f875c10769e4c050e5bea5a0f21603447825217.png)
+![](../../../picture/a517d0f875c10769e4c050e5bea5a0f21603447825217.png)
 
 ### provider超时机制
 
-![](../../picture/19234dcb5d4facbe5d162dae3800e5231603447825217.png)
+![](../../../picture/19234dcb5d4facbe5d162dae3800e5231603447825217.png)
 
 ### input超时机制
 
-![](../../picture/8077005aa4c459f8de7ed7866a84f0b71603447825218.png)
+![](../../../picture/8077005aa4c459f8de7ed7866a84f0b71603447825218.png)
 
 ### ANR超时阈值
-![](../../picture/dfa638c211c322a9e0cf9824cf65cb541603447825218.png)
+![](../../../picture/dfa638c211c322a9e0cf9824cf65cb541603447825218.png)
 
 #### 查找
 
