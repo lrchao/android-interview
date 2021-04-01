@@ -77,7 +77,7 @@ Android面试题
 - [Okhttp之addInterceptor与addNetworkInterceptor的区别](document/thirdparty/Okhttp之addInterceptor与addNetworkInterceptor的区别.md)
 - [glide原理]
 - [LiveDataBus原理]
-- [glide原理]
+- [ARouter原理]
 
 ## Experience
 - [实际工作中用到哪些设计模式](document/experience/实际工作中用到哪些设计模式.md)
