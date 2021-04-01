@@ -62,6 +62,7 @@ Android面试题
 - [如何内存优化？](document/android/optimize/如何内存优化.md)
 - [ANR是什么，怎么解决？ANR查找?](document/android/optimize/ANR是什么，怎么解决？ANR查找.md)
 - 怎样检测函数执行是否卡顿
+- APK体积优化
 
 ## Network
 
