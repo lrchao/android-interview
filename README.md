@@ -78,6 +78,7 @@ Android面试题
 - [glide原理]
 - [LiveDataBus原理]
 - [ARouter原理]
+- [socket心跳包]
 
 ## Experience
 - [实际工作中用到哪些设计模式](document/experience/实际工作中用到哪些设计模式.md)
