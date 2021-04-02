@@ -78,7 +78,7 @@ Android面试题
 - [Okhttp之addInterceptor与addNetworkInterceptor的区别](document/thirdparty/Okhttp之addInterceptor与addNetworkInterceptor的区别.md)
 - [glide原理]
 - [LiveDataBus原理]
-- [ARouter原理]
+- [ARouter原理](document/thirdparty/ARouter原理.md)
 - [socket心跳包]
 
 ## Experience
